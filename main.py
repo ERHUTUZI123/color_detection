@@ -31,7 +31,7 @@ while True:
 
     print(bbox)
 
-    cv2.imshow('frame', mask)
+    cv2.imshow('frame', frame)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
@@ -39,4 +39,5 @@ while True:
 cap.release()
 
 cv2.destroyAllWindows()
+
 
