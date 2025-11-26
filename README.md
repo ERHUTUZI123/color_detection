@@ -1,4 +1,4 @@
-# color_detection
+# Color Detection
 Color Detection can frame the object with a specific color using a green bounding box.
 
 Open your IDE and terminal, enter 
