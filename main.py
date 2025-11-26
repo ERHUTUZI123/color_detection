@@ -4,7 +4,7 @@ from PIL import Image
 
 from util import get_limits
 
-yellow = [0, 255, 255]
+color = [0, 255, 255]
 cap = cv2.VideoCapture(0)
 
 while True:
@@ -12,7 +12,7 @@ while True:
 
     hsvImage = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
 
-    lowerLimit, upperLimit = get_limits(color=yellow)
+    lowerLimit, upperLimit = get_limits(color=color)
 
     mask = cv2.inRange(hsvImage, lowerLimit, upperLimit)
 
@@ -39,3 +39,4 @@ while True:
 cap.release()
 
 cv2.destroyAllWindows()
+
